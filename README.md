@@ -60,7 +60,7 @@ When an object of a class is created, the class is said to be **instantiated**. 
 
 **CONSTRUCTORS:**
 
-Constructors are used for initializing new objects. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
+Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
 
 
 **CONSTRUCTORS VS METHODS:**
