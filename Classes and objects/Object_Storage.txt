@@ -1,0 +1,53 @@
+In Java, all objects are dynamically allocated on Heap. This is different from C++ where objects can be allocated memory either on Stack or on Heap. In C++, when we allocate the object using new(), the object is allocated on Heap, otherwise on Stack if not global or static.
+
+In Java, when we only declare a variable of a class type, only a reference is created (memory is not allocated for the object). To allocate memory to an object, we must use new(). So the object is always allocated memory on heap.
+
+for example:
+
+
+class Test { 
+  
+// class contents 
+void show() 
+{ 
+    System.out.println("Test::show() called"); 
+} 
+} 
+  
+public class Main { 
+  
+        // Driver Code 
+    public static void main(String[] args)  
+    { 
+        Test t;  
+          
+        // Error here because t  
+        // is not initialzed 
+        t.show();  
+    } 
+} 
+
+Correct Code:
+
+
+class Test { 
+      
+// class contents 
+void show()  
+{ 
+    System.out.println("Test::show() called"); 
+} 
+} 
+  
+public class Main { 
+      
+    // Driver Code 
+    public static void main(String[] args) 
+    { 
+          
+        // all objects are dynamically  
+        // allocated 
+        Test t = new Test();  
+        t.show(); // No error  
+    } 
+} 
