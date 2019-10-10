@@ -1,0 +1,48 @@
+RULES:
+
+
+    1.A Constructor cannot have a return type.
+
+    2.A constructor must have the same name as that of the Class.
+
+    3.Constructors cannot be marked static
+
+    4.A constructor cannot be marked abstract
+
+    5.A Constructor cannot be overridden.
+
+    6.A Constructor cannot be Final.
+
+PROPERTIES:
+
+    1.A constructor is invoked when a new object is created.
+
+    2.Constructors can also be overloaded but it can not be overridden.
+
+    3.Every class has at least one constructor. If a user doesn’t provide any, JVM will provide a default no-arg constructor.
+
+    4.Abstract class also has a constructor.
+
+    5.A constructor must have the same name as the class.
+
+    6.A constructor can’t have a return type.
+
+    7.If a method with the same name as a class has return type will be treated as a normal member method and not constructor.
+
+    8.A constructor can have any access modifier(All).
+
+    9.A default constructor is a no-arg constructor which calls the no-arg constructor of the superclass. In case superclass doesn’t have any no-arg constructor then it will throw a runtime exception.
+
+    10.In a case where a class has the default constructor, its superclass needs to have a no-arg constructor.
+
+    11.The first statement of a constructor can be either this or super but cannot be both at the same time.
+
+    12.If the coder doesn’t write any this or super call then the compiler will add a call to super.
+
+    13.Instance member can be accessible only after the super constructor runs.
+
+    14.Interfaces do not have constructors.
+
+    15.A constructor is not inherited. Hence cannot be overridden.
+
+    16.A constructor cannot be directly invoked. It will be invoked(Implicitly) when a new object is created or a call by other constructors.
