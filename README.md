@@ -79,5 +79,17 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 5.As per Java naming convention, Method names should be camelcase while Constructor names should start with capital letter.
 
+**JAVA ACCESS MODIFIERS:**
+
+|           | **PRIVATE**|**DEFAULT**|**PROTECTED**|**PUBLIC**|
+|:---------:|:----------:|:---------:|:-----------:|:--------:|
+|**WITHIN SAME CLASS**|YES|YES|YES|YES|
+|**FROM ANY CLASS IN SAME PACKAGE**|NO|YES|YES|YES|
+|**FROM ANY SUB CLASS IN SAME PACKAGE**|NO|YES|YES|YES|
+|**FROM ANY NON-SUB CLASS IN SAME PACKAGE**|NO|YES|YES|YES|
+|**FROM ANY SUB-CLASS FROM DIFFERENT PACKAGE**|NO|NO|YES|YES|
+|**FROM ANY NON-SUB CLASS FROM DIFFERENT PACKAGE**|NO|NO|NO|YES|
+
+
 
 
