@@ -92,4 +92,22 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 
 
+**FOLDER:Class and objects:**
+
+**Code1:CreatingObjects1.java:** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
+
+**Code2:Constructor.java :** Shows the creation and invoking of a constructor.The new operator also invokes the class constructor.
+
+**Code3:CreatingObjects2.java:** Shows the creation of object and accessing class members without creating a constructor.
+
+**Code4:GuessingGame.java:** A simple game implemented using classes and objects.
+
+**Code5:OrderOfExecution.java:** Shows the order of execution of static anonymous and init(constructor) block.From the output of this code it can be seen that STATIC block will execute only once when class gets loaded.But Anonymous block and Constructor will run every time object of a Class gets created. Init block will get executed first and then constructor.
+
+**Code6:SwapObjects.java:** code to swap two objects of the same class with only one class member.
+
+**Code7:SwapObjects2problem.java:** Code shows the problem to swap two objects of a class with more than one class members if we use the same way used in Code6.
+
+**Code8:SwapObjects2Solution.java:** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
+
 
