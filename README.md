@@ -120,7 +120,7 @@ Inheritance is an important pillar of OOP(Object Oriented Programming). It is th
     
     Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
 
-##### Types Of Inheritence:
+### Types Of Inheritence:
 
 **1.Single Inheritence:** In single inheritance,one subclass inherit the features of one superclass.
 
@@ -129,6 +129,7 @@ Inheritance is an important pillar of OOP(Object Oriented Programming). It is th
 **3.Hierarchical Inheritence:**  In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one sub class.
 
 **4.Multiple Inheritence:** In Multiple inheritance ,one class can have more than one superclass and inherit features from all parent classes.Java does not support multiple inheritance with classes. In java, we can achieve multiple inheritance only through Interfaces.
+Multiple inheritance is not supported by Java using classes , handling the complexity that causes due to multiple inheritance is very complex. It creates problem during various operations like casting, constructor chaining etc 
 
 **FOLDER:Inheritence:** 
 
@@ -137,5 +138,9 @@ Inheritance is an important pillar of OOP(Object Oriented Programming). It is th
 **Code2: SingleInheritence.java:** Code to demostrate how Single Inheritence works.
 
 **Code3: MultilevelInheritence.java:** Code to demonstrate how Multilevel Inheritence works.
+
+**Code4: HierarchicalInheritance.java:** Code to demonstrate how Hierarchical Inheritance works.
+
+
 
 
