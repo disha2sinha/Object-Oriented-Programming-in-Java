@@ -110,4 +110,32 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 **Code8:SwapObjects2Solution.java:** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
 
+**INHERITANCE:**
+
+Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in java by which one class is allow to inherit the features(fields and methods) of another class.
+
+    Super Class: The class whose features are inherited is known as super class(or a base class or a parent class).
+    
+    Sub Class: The class that inherits the other class is known as sub class(or a derived class, extended class, or child class). The subclass can add its own fields and methods in addition to the superclass fields and methods.
+    
+    Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class that includes some of the code that we want, we can derive our new class from the existing class. By doing this, we are reusing the fields and methods of the existing class.
+
+##### Types Of Inheritence:
+
+**1.Single Inheritence:** In single inheritance,one subclass inherit the features of one superclass.
+
+**2.Multilevel Inheritence:**  In Multilevel Inheritance, a derived class will be inheriting a base class and as well as the derived class also act as the base class to other class.
+
+**3.Hierarchical Inheritence:**  In Hierarchical Inheritance, one class serves as a superclass (base class) for more than one sub class.
+
+**4.Multiple Inheritence:** In Multiple inheritance ,one class can have more than one superclass and inherit features from all parent classes.Java does not support multiple inheritance with classes. In java, we can achieve multiple inheritance only through Interfaces.
+
+**FOLDER:Inheritence:** 
+
+**Code1: ObjectCreation.java:** Code shows that super class and sub class constructors refer to the same objects.
+
+**Code2: SingleInheritence.java:** Code to demostrate how Single Inheritence works.
+
+**Code3: MultilevelInheritence.java:** Code to demonstrate how Multilevel Inheritence works.
+
 
