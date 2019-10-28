@@ -148,6 +148,11 @@ Multiple inheritance is not supported by Java using classes , handling the compl
 **FOLDER: this keyword:**
 
 **Code1: [this1.java]:** this used to refer current class instance variables.
+**Code2: [this2.java]:** used to invoke current class constructor.
+**Code3: [this3.java]:** used to invoke current class instances
+**Code4: [this4.java]:** used as method parameter.
+**Code5: [this5.java]:** used to invoke current class method
+**Code6: [this6.java]:** used as an argument in constructor call
 
 
 
