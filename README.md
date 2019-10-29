@@ -107,6 +107,8 @@ Java doesnot support returning multiple values by a method
 
 **Code6:[ReturningValues2.java]:** Returning multiple values by returning object.
 
+**Code7:[ReturningValues3.java]:** Returning multiple values by using List Object class
+
 **CONSTRUCTORS:**
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
