@@ -99,6 +99,14 @@ If we do not change the reference to refer some other object (or memory location
 
 **Code3:[PassingObjects2.java]:** A program to show that we can change members of a reference if we do not change the reference itself.
 
+**Code4:[PassingObjects4.java]:** Another Program to illustrate passing object to methods.
+
+Java doesnot support returning multiple values by a method
+
+**Code5:[ReturningValues1.java]:** Returning multiple values using array.
+
+**Code6:[ReturningValues2.java]:** Returning multiple values by returning object.
+
 **CONSTRUCTORS:**
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
