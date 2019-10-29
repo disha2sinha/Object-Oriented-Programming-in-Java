@@ -99,15 +99,22 @@ If we do not change the reference to refer some other object (or memory location
 
 **Code3:[PassingObjects2.java]:** A program to show that we can change members of a reference if we do not change the reference itself.
 
-**Code4:[PassingObjects4.java]:** Another Program to illustrate passing object to methods.
-
 Java doesnot support returning multiple values by a method
 
-**Code5:[ReturningValues1.java]:** Returning multiple values using array.
+**Code4:[ReturningValues1.java]:** Returning multiple values using array.
 
-**Code6:[ReturningValues2.java]:** Returning multiple values by returning object.
+**Code5:[ReturningValues2.java]:** Returning multiple values by returning object.
 
-**Code7:[ReturningValues3.java]:** Returning multiple values by using List Object class
+**Code6:[ReturningValues3.java]:** Returning multiple values by using List Object class
+
+When we pass a primitive type to a method, it is passed by value. But when we pass an object to a method, the situation changes dramatically, because objects are passed by what is effectively call-by-reference. Java does what’s sort of a hybrid between pass-by-value and pass-by-reference. Basically, a parameter cannot be changed by the function, but the function can ask the parameter to change itself via calling some method within it.
+
+While creating a variable of a class type, we only create a reference to an object. Thus, when we pass this reference to a method, the parameter that receives it will refer to the same object as that referred to by the argument.This effectively means that objects act as if they are passed to methods by use of call-by-reference.Changes to the object inside the method do reflect in the object used as an argument.
+
+
+**Code8:[PassingObjects4.java]:** Another Program to illustrate passing object to methods.
+
+**Code9:[ReturningObjects.java]:** A program to illustrate method returning object.
 
 **CONSTRUCTORS:**
 
