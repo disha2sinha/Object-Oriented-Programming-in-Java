@@ -57,6 +57,47 @@ An object is an instance of a class.Technically, Class is a template which descr
 
 When an object of a class is created, the class is said to be **instantiated**. All the instances share the attributes and the behavior of the class. But the values of those attributes, i.e. the state are unique for each object. A single class may have any number of instances.
 
+# METHODS:
+
+A method is a collection of statements that perform certain tasks upon calling and return the result to the caller. A method can perform certain tasks without even returning anything. Methods allow us to reuse the code without retyping the code.
+
+**Method Declaration:**
+Method delaration contains six components:
+
+   1.**Modifier:** Defines access type of the method i.e. from where it can be accessed in your application. In Java, there 4 type of the access specifiers.
+   
+        public: accessible in all class in your application.
+        protected: accessible within the class in which it is defined and in its subclass(es)
+        private: accessible only within the class in which it is defined.
+        default (declared/defined without using any modifier) : accessible within same class and package within which its class is defined.
+  2.**The return type :** The data type of the value returned by the method or void if does not return a value.
+   
+  3.**Method Name :** the rules for field names apply to method names as well, but the convention is a little different.
+   
+  4.**Parameter list :** Comma separated list of the input parameters are defined, preceded with their data type, within the enclosed parenthesis. If there are no parameters,empty parentheses () are used.
+  
+  5.**Exception list :** The exceptions the method can throw can be specified.
+  
+  6.**Method body :** It is enclosed between braces {} and contains the code to be executed to perform the intended operations.
+
+**Memory allocation for methods calls:**
+
+Methods calls are implemented through stack. Whenever a method is called a stack frame is created within the stack area and after that the arguments passed to and the local variables and value to be returned by this called method are stored in this stack frame and when execution of the called method is finished, the allocated stack frame would be deleted. There is a stack pointer register that tracks the top of the stack which is adjusted accordingly.
+
+**Java is strictly pass by value**:
+
+**FOLDER:Methods:**
+
+**Code1:[PassByValue1.java]:** We pass an int to the function “change()” and as a result the change in the value of that integer is not reflected in the main method.Java creates a copy of the variable being passed in the method and then do the manipulations. Hence the change is not reflected in the main method.
+
+In Java, all non-primitives (or objects of any class) are always references. Java creates a copy of references and pass it to method, but they still point to same memory reference. Mean if set some other object to reference passed inside method, the object from calling method as well its reference will remain unaffected.
+
+
+**Code2:[PassingObjects1.java]:** A program to show that references are also passed by value. 
+
+If we do not change the reference to refer some other object (or memory location), we can make changes to the members and these changes are reflected back.
+
+**Code3:[PassingObjects2.java]:** A program to show that we can change members of a reference if we do not change the reference itself.
 
 **CONSTRUCTORS:**
 
