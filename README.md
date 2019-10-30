@@ -8,7 +8,7 @@ The codes written in Java are converted into an intermediate level language call
 
 An identifier can be a method name,class name,variable name or label.
 
-**Code1:: FirstProgramme.java:** 
+**Code1::[FirstProgramme.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/FirstProgramme.java):** 
 
 In this Code,there are 5 identifiers:
 
@@ -88,33 +88,38 @@ Methods calls are implemented through stack. Whenever a method is called a stack
 
 **FOLDER:Methods:**
 
-**Code1:[PassByValue1.java]:** We pass an int to the function “change()” and as a result the change in the value of that integer is not reflected in the main method.Java creates a copy of the variable being passed in the method and then do the manipulations. Hence the change is not reflected in the main method.
+**Code1:[PassByValue1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassByValue1.java):** We pass an int to the function “change()” and as a result the change in the value of that integer is not reflected in the main method.Java creates a copy of the variable being passed in the method and then do the manipulations. Hence the change is not reflected in the main method.
 
 In Java, all non-primitives (or objects of any class) are always references. Java creates a copy of references and pass it to method, but they still point to same memory reference. Mean if set some other object to reference passed inside method, the object from calling method as well its reference will remain unaffected.
 
 
-**Code2:[PassingObjects1.java]:** A program to show that references are also passed by value. 
+**Code2:[PassingObjects1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassingObjects1.java):** A program to show that references are also passed by value. 
 
 If we do not change the reference to refer some other object (or memory location), we can make changes to the members and these changes are reflected back.
 
-**Code3:[PassingObjects2.java]:** A program to show that we can change members of a reference if we do not change the reference itself.
+**Code3:[PassingObjects2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassingObjects2.java):** A program to show that we can change members of a reference if we do not change the reference itself.
 
 Java doesnot support returning multiple values by a method
 
-**Code4:[ReturningValues1.java]:** Returning multiple values using array.
+**Code4:[ReturningValues1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/ReturningValues1.java):** Returning multiple values using array.
 
-**Code5:[ReturningValues2.java]:** Returning multiple values by returning object.
+**Code5:[ReturningValues2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/ReturningValues2.java):** Returning multiple values by returning object.
 
-**Code6:[ReturningValues3.java]:** Returning multiple values by using List Object class
+**Code6:[ReturningValues3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/ReturningValues3.java):** Returning multiple values by using List Object class
 
 When we pass a primitive type to a method, it is passed by value. But when we pass an object to a method, the situation changes dramatically, because objects are passed by what is effectively call-by-reference. Java does what’s sort of a hybrid between pass-by-value and pass-by-reference. Basically, a parameter cannot be changed by the function, but the function can ask the parameter to change itself via calling some method within it.
 
 While creating a variable of a class type, we only create a reference to an object. Thus, when we pass this reference to a method, the parameter that receives it will refer to the same object as that referred to by the argument.This effectively means that objects act as if they are passed to methods by use of call-by-reference.Changes to the object inside the method do reflect in the object used as an argument.
 
 
-**Code8:[PassingObjects4.java]:** Another Program to illustrate passing object to methods.
+**Code8:[PassingObjects3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassingObjects3.java):** Another Program to illustrate passing object to methods.
 
-**Code9:[ReturningObjects.java]:** A program to illustrate method returning object.
+**Code9:[ReturningObjects.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/ReturningObjects.java):** A program to illustrate method returning object.
+
+### METHOD OVERLOADING:
+
+In java,it is possible to define two or more methods within the same class that share the same name as long as their parameter declaration are different either in terms of number of parameters or type of the parameters or both.This process is called Method Overloading.
+
 
 **CONSTRUCTORS:**
 
