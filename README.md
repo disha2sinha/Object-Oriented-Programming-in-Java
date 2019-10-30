@@ -127,7 +127,23 @@ Priority wise, compiler take these steps when the exact Prototype doesnot match 
 
 **Code10:[MethodOverloading1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverloading1.java):** A program to illustrate how method Overloading works.
 
-**CONSTRUCTORS:**
+We can overload two or more static methods with same name, but differences in input parameters.We cannot overload two methods in Java if they differ only by static keyword (number of parameters and types of parameters is same). 
+
+The compiler does not consider the return type while differentiating the overloaded method. But two methods with the same signature and different return type can not be declared. It will throw a compile time error.
+
+Hence Method overloading can be done by changing:
+
+    1.The number of parameters in two methods.
+    2.The data types of the parameters of methods.
+    3.The Order of the parameters of methods.
+    
+**Code11:[MethodOverloading2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverloading2.java):** A program to illustrate method overloading by changing the order of parameters in the methods.
+
+**Code12:[NullError.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/NullError.java):** In this Code the method arguments Integer and String both are not primitive data types in Java. That means they accept null values. When we pass a null value to the method1 the compiler gets confused which method it has to select, as both are accepting the null.
+
+**Code13:[NullErrorSolution.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/NullErrorSolution.java):** A Solution to the problem which occured in **Code12**.
+
+# CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
 
