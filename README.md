@@ -57,6 +57,25 @@ An object is an instance of a class.Technically, Class is a template which descr
 
 When an object of a class is created, the class is said to be **instantiated**. All the instances share the attributes and the behavior of the class. But the values of those attributes, i.e. the state are unique for each object. A single class may have any number of instances.
 
+**FOLDER:Class and objects:**
+
+**Code1:CreatingObjects1.java:** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
+
+**Code2:Constructor.java :** Shows the creation and invoking of a constructor.The new operator also invokes the class constructor.
+
+**Code3:CreatingObjects2.java:** Shows the creation of object and accessing class members without creating a constructor.
+
+**Code4:GuessingGame.java:** A simple game implemented using classes and objects.
+
+**Code5:OrderOfExecution.java:** Shows the order of execution of static anonymous and init(constructor) block.From the output of this code it can be seen that STATIC block will execute only once when class gets loaded.But Anonymous block and Constructor will run every time object of a Class gets created. Init block will get executed first and then constructor.
+
+**Code6:SwapObjects.java:** code to swap two objects of the same class with only one class member.
+
+**Code7:SwapObjects2problem.java:** Code shows the problem to swap two objects of a class with more than one class members if we use the same way used in Code6.
+
+**Code8:SwapObjects2Solution.java:** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
+
+
 # METHODS:
 
 A method is a collection of statements that perform certain tasks upon calling and return the result to the caller. A method can perform certain tasks without even returning anything. Methods allow us to reuse the code without retyping the code.
@@ -143,6 +162,17 @@ Hence Method overloading can be done by changing:
 
 **Code13:[NullErrorSolution.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/NullErrorSolution.java):** A Solution to the problem which occured in **Code12**.
 
+**Code14:[MainOverloading.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MainOverloading.java):** A program to illustrate overloading main method.
+
+**Code15:[Varargs.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/Varargs.java):** A variable-length argument is specified by three periods(…).This syntax tells the compiler that a method varargs( ) can be called with zero or more arguments. As a result, here x is implicitly declared as an array of type int[].
+
+**Code16:[VarargsMethodOverloading.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/VarargsMethodOverloading.java):** A Program to show method Overloading in methods with variable-length argument.
+
+**Code17:[AmbiguousVarargsMethodOverloading.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/AmbiguousVarargsMethodOverloading.java):** A Program to illustrate ambiguity while overloading method with variable-length arguments.
+
+There are 3 phases used in overload resolution: First phase performs overload resolution without permitting boxing or unboxing conversion, Second phase performs overload resolution while allowing boxing and unboxing and Third phase allows overloading to be combined with variable arity methods, boxing, and unboxing. If no applicable method is found during these phases, then ambiguity occurs.
+
+
 # CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
@@ -176,24 +206,6 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 |**FROM ANY NON-SUB CLASS FROM DIFFERENT PACKAGE**|NO|NO|NO|YES|
 
 
-
-**FOLDER:Class and objects:**
-
-**Code1:CreatingObjects1.java:** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
-
-**Code2:Constructor.java :** Shows the creation and invoking of a constructor.The new operator also invokes the class constructor.
-
-**Code3:CreatingObjects2.java:** Shows the creation of object and accessing class members without creating a constructor.
-
-**Code4:GuessingGame.java:** A simple game implemented using classes and objects.
-
-**Code5:OrderOfExecution.java:** Shows the order of execution of static anonymous and init(constructor) block.From the output of this code it can be seen that STATIC block will execute only once when class gets loaded.But Anonymous block and Constructor will run every time object of a Class gets created. Init block will get executed first and then constructor.
-
-**Code6:SwapObjects.java:** code to swap two objects of the same class with only one class member.
-
-**Code7:SwapObjects2problem.java:** Code shows the problem to swap two objects of a class with more than one class members if we use the same way used in Code6.
-
-**Code8:SwapObjects2Solution.java:** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
 
 **INHERITANCE:**
 
