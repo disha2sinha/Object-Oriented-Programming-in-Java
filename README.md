@@ -119,7 +119,13 @@ While creating a variable of a class type, we only create a reference to an obje
 ### METHOD OVERLOADING:
 
 In java,it is possible to define two or more methods within the same class that share the same name as long as their parameter declaration are different either in terms of number of parameters or type of the parameters or both.This process is called Method Overloading.
+Priority wise, compiler take these steps when the exact Prototype doesnot match with the arguments:
 
+
+1.Type Conversion but to higher type(in terms of range) in same family.
+2.Type conversion to next higher family(suppose if there is no long data type available for an int data type, then it will search for the float data type).
+
+**Code10:[MethodOverloading1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverloading1.java):** A program to illustrate how method Overloading works.
 
 **CONSTRUCTORS:**
 
