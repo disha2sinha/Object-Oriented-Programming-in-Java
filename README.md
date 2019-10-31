@@ -250,11 +250,11 @@ Multiple inheritance is not supported by Java using classes , handling the compl
 
 **Code3: [this3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this3.java):** used to invoke current class instances.
 
-**Code4: [this4.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this4.java):** used as method parameter.
+**Code4: [this4.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this4.java):** used as method parameter.
 
-**Code5: [this5.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this5.java):** used to invoke current class method.
+**Code5: [this5.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this5.java):** used to invoke current class method.
 
-**Code6: [this6.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this6.java):** used as an argument in constructor call.
+**Code6: [this6.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this6.java):** used as an argument in constructor call.
 
 # super KEYWORD:
 
