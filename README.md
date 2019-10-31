@@ -1,6 +1,6 @@
 # Object-Oriented-Programming-in-Java
 
-Resources: [Geeksforgeeks](https://www.geeksforgeeks.org/java/),[javabeginnerstutorial](https://javabeginnerstutorial.com/core-java-tutorial/)
+Resources: [Geeksforgeeks](https://www.geeksforgeeks.org/java/) , [javabeginnerstutorial](https://javabeginnerstutorial.com/core-java-tutorial/)
 
 
 **JAVA IS A PLATFORM-INDEPENDENT LANGUAGE**
