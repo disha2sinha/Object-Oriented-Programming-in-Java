@@ -57,23 +57,23 @@ An object is an instance of a class.Technically, Class is a template which descr
 
 When an object of a class is created, the class is said to be **instantiated**. All the instances share the attributes and the behavior of the class. But the values of those attributes, i.e. the state are unique for each object. A single class may have any number of instances.
 
-**FOLDER:Class and objects:**
+**FOLDER:[Class and objects](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Classes%20and%20objects):**
 
-**Code1:CreatingObjects1.java:** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
+**Code1:[CreatingObjects1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/Creatingobjects1.java):** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
 
-**Code2:Constructor.java :** Shows the creation and invoking of a constructor.The new operator also invokes the class constructor.
+**Code2:[Constructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/Constructor.java) :** Shows the creation and invoking of a constructor.The new operator also invokes the class constructor.
 
-**Code3:CreatingObjects2.java:** Shows the creation of object and accessing class members without creating a constructor.
+**Code3:[CreatingObjects2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/Creatingobjects2.java):** Shows the creation of object and accessing class members without creating a constructor.
 
-**Code4:GuessingGame.java:** A simple game implemented using classes and objects.
+**Code4:[GuessingGame.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/GuessingGame.java):** A simple game implemented using classes and objects.
 
-**Code5:OrderOfExecution.java:** Shows the order of execution of static anonymous and init(constructor) block.From the output of this code it can be seen that STATIC block will execute only once when class gets loaded.But Anonymous block and Constructor will run every time object of a Class gets created. Init block will get executed first and then constructor.
+**Code5:[OrderOfExecution.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/OrderOfExecution.java):** Shows the order of execution of static anonymous and init(constructor) block.From the output of this code it can be seen that STATIC block will execute only once when class gets loaded.But Anonymous block and Constructor will run every time object of a Class gets created. Init block will get executed first and then constructor.
 
-**Code6:SwapObjects.java:** code to swap two objects of the same class with only one class member.
+**Code6:[SwapObjects.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/SwapObjects.java):** code to swap two objects of the same class with only one class member.
 
-**Code7:SwapObjects2problem.java:** Code shows the problem to swap two objects of a class with more than one class members if we use the same way used in Code6.
+**Code7:[SwapObjects2problem.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/SwapObjects2Problem.java):** Code shows the problem to swap two objects of a class with more than one class members if we use the same way used in Code6.
 
-**Code8:SwapObjects2Solution.java:** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
+**Code8:[SwapObjects2Solution.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/SwapObjects2Solution.java):** Code shows the solution to Code7 problem using Wrapper class.A wrapper class solution works even if the user class doesn’t have access to members of the class whose objects are to be swapped.
 
 
 # METHODS:
@@ -105,7 +105,7 @@ Methods calls are implemented through stack. Whenever a method is called a stack
 
 **Java is strictly pass by value**:
 
-**FOLDER:Methods:**
+**FOLDER:[Methods](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Methods):**
 
 **Code1:[PassByValue1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassByValue1.java):** We pass an int to the function “change()” and as a result the change in the value of that integer is not reflected in the main method.Java creates a copy of the variable being passed in the method and then do the manipulations. Hence the change is not reflected in the main method.
 
@@ -207,7 +207,7 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 
 
-**INHERITANCE:**
+# INHERITANCE:
 
 Inheritance is an important pillar of OOP(Object Oriented Programming). It is the mechanism in java by which one class is allow to inherit the features(fields and methods) of another class.
 
@@ -228,37 +228,47 @@ Inheritance is an important pillar of OOP(Object Oriented Programming). It is th
 **4.Multiple Inheritence:** In Multiple inheritance ,one class can have more than one superclass and inherit features from all parent classes.Java does not support multiple inheritance with classes. In java, we can achieve multiple inheritance only through Interfaces.
 Multiple inheritance is not supported by Java using classes , handling the complexity that causes due to multiple inheritance is very complex. It creates problem during various operations like casting, constructor chaining etc 
 
-**FOLDER:Inheritence:** 
+**FOLDER:[Inheritence](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Inheritence):** 
 
-**Code1: [ObjectCreation.java]:** Code shows that super class and sub class constructors refer to the same objects.
+**Code1: [ObjectCreation.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Inheritence/ObjectCreation.java):** Code shows that super class and sub class constructors refer to the same objects.
 
-**Code2: [SingleInheritence.java]:** Code to demostrate how Single Inheritence works.
+**Code2: [SingleInheritence.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Inheritence/SingleInheritence.java):** Code to demostrate how Single Inheritence works.
 
-**Code3: [MultilevelInheritence.java]:** Code to demonstrate how Multilevel Inheritence works.
+**Code3: [MultilevelInheritence.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Inheritence/MultilevelInheritence.java):** Code to demonstrate how Multilevel Inheritence works.
 
-**Code4: [HierarchicalInheritance.java]:** Code to demonstrate how Hierarchical Inheritance works.
+**Code4: [HierarchicalInheritance.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Inheritence/HierarchicalInheritance.java):** Code to demonstrate how Hierarchical Inheritance works.
 
 # this KEYWORD:
 
 'this' works as a reference to the current object, whose method or constructor is being invoked. This keyword can be used to refer to any member of the current object from within an instance method or a constructor.
 
-**FOLDER: this keyword:**
+**FOLDER: [this keyword](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/this%20keyword)**:
 
-**Code1: [this1.java]:** this used to refer current class instance variables.
+**Code1: [this1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this1.java):** this used to refer current class instance variables.
 
-**Code2: [this2.java]:** used to invoke current class constructor.
+**Code2: [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java):** used to invoke current class constructor.
 
-**Code3: [this3.java]:** used to invoke current class instances.
+**Code3: [this3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this3.java):** used to invoke current class instances.
 
-**Code4: [this4.java]:** used as method parameter.
+**Code4: [this4.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this4.java):** used as method parameter.
 
-**Code5: [this5.java]:** used to invoke current class method.
+**Code5: [this5.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this5.java):** used to invoke current class method.
 
-**Code6: [this6.java]:** used as an argument in constructor call.
+**Code6: [this6.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this keyword/this6.java):** used as an argument in constructor call.
 
 # super KEYWORD:
 
-**FOLDER:super KEYWORD:**
+The super keyword in java is a reference variable that is used to refer parent class objects.
+
+**FOLDER:[super KEYWORD](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Super%20keyword):**
+
+**Code1:[superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java):** 'super' keyword can also be used to access the parent class constructor.'super' can call both parametric as well as non parametric constructors depending upon the situation.
+
+**Code2:[superWithMethods.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithMethods.java):** A program to illustrate that whenever a parent and child class have same named methods then to resolve ambiguity we use super keyword.
+
+**Code1:[superWithVariables.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithVariables.java):** A Program to illustrate how use of 'super' with data member of parent class can avoid ambiguity if derived class and parent class has same data members.
+
+
 
 
 
