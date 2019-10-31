@@ -266,7 +266,7 @@ The super keyword in java is a reference variable that is used to refer parent c
 
 **Code2:[superWithMethods.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithMethods.java):** A program to illustrate that whenever a parent and child class have same named methods then to resolve ambiguity we use super keyword.
 
-**Code1:[superWithVariables.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithVariables.java):** A Program to illustrate how use of 'super' with data member of parent class can avoid ambiguity if derived class and parent class has same data members.
+**Code3:[superWithVariables.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithVariables.java):** A Program to illustrate how use of 'super' with data member of parent class can avoid ambiguity if derived class and parent class has same data members.
 
 
 
