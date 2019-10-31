@@ -1,5 +1,8 @@
 # Object-Oriented-Programming-in-Java
 
+Resources: [Geeksforgeeks](https://www.geeksforgeeks.org/java/),[javabeginnerstutorial](https://javabeginnerstutorial.com/core-java-tutorial/)
+
+
 **JAVA IS A PLATFORM-INDEPENDENT LANGUAGE**
 
 The codes written in Java are converted into an intermediate level language called **bytecode**,after compilation which becomes a part of the java platform,independent of the machine on which the code runs.This makes Java highly portable as its bytecodes can be run on any machine by an interpreter called **Java Virtual Machine(JVM)**
