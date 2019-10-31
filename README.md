@@ -172,13 +172,32 @@ Hence Method overloading can be done by changing:
 
 There are 3 phases used in overload resolution: First phase performs overload resolution without permitting boxing or unboxing conversion, Second phase performs overload resolution while allowing boxing and unboxing and Third phase allows overloading to be combined with variable arity methods, boxing, and unboxing. If no applicable method is found during these phases, then ambiguity occurs.
 
-## METHOD OVERRIDING:
+### METHOD OVERRIDING:
 
 When a method in a subclass has the same name, same parameters declaration and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
 
 **Code18:[MethodOverriding1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverriding1.java):** A simple program to demonstrate Method overriding in java.
 
-**Code19:[MethodOverriding2.java](
+**Code19:[MethodOverriding2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverriding2.java):**  The access modifier for an overriding method can allow more, but not less, access than the overridden method. For example, a protected instance method in the super-class can be made public, but not private, in the subclass. Doing so, will generate compile-time error.
+
+Private methods cannot be overridden as they are bonded during compile time. Therefore we can’t even override private methods in a subclass.
+
+### DYNAMIC METHOD DISPATCH/RUN-TIME POLYMORPHISM:
+
+Method Overriding is one of the ways in which Java supports Run-time polymorphism.Dynamic Method Dispatch is a process in which a call to a overriden method is resolved during runtime rather than compile time.
+
+1.When an overriden method is called by superclass reference,Java determines which version of the method is to be executed depending on the type of object being reffered to at the time of calling.Thus this determination is made during run-time.
+
+2.At run-time,it depends on the type of the object being reffered to which determines the version of the overriden method to be executed.
+
+3.A superclass reference variable reffering to a subclass object is known as upcasting.
+
+**Code20:[DynamicMethodDispatch1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/DynamicMethodDispatch1.java):** A Java program to illustrate Dynamic Method Dispatch using hierarchical inheritance.
+
+In Java, we can override methods only, not the variables(data members), so runtime polymorphism cannot be achieved by data members.
+
+
+
 # CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
