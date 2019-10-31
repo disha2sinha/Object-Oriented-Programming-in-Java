@@ -172,7 +172,13 @@ Hence Method overloading can be done by changing:
 
 There are 3 phases used in overload resolution: First phase performs overload resolution without permitting boxing or unboxing conversion, Second phase performs overload resolution while allowing boxing and unboxing and Third phase allows overloading to be combined with variable arity methods, boxing, and unboxing. If no applicable method is found during these phases, then ambiguity occurs.
 
+## METHOD OVERRIDING:
 
+When a method in a subclass has the same name, same parameters declaration and same return type(or sub-type) as a method in its super-class, then the method in the subclass is said to override the method in the super-class.
+
+**Code18:[MethodOverriding1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverriding1.java):** A simple program to demonstrate Method overriding in java.
+
+**Code19:[MethodOverriding2.java](
 # CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
