@@ -189,6 +189,8 @@ It is possible to have different return type for a overriding method in child cl
 
 **Code20:[MethodOverriding3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverriding3.java):** A program to demonstrate that parent class overriden method can be called in overriding method of sub class using super keyword.
 
+**Code21:[EqualsOverriding.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/EqualsOverriding.java):** A program which overrides equals() method of Object class of java to find if two different objects of a same class are equal or not.
+
 ### DYNAMIC METHOD DISPATCH/RUN-TIME POLYMORPHISM:
 
 Method Overriding is one of the ways in which Java supports Run-time polymorphism.Dynamic Method Dispatch is a process in which a call to a overriden method is resolved during runtime rather than compile time.
@@ -199,10 +201,14 @@ Method Overriding is one of the ways in which Java supports Run-time polymorphis
 
 3.A superclass reference variable reffering to a subclass object is known as upcasting.
 
-**Code21:[DynamicMethodDispatch1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/DynamicMethodDispatch1.java):** A Java program to illustrate Dynamic Method Dispatch using hierarchical inheritance.
+**Code22:[DynamicMethodDispatch1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/DynamicMethodDispatch1.java):** A Java program to illustrate Dynamic Method Dispatch using hierarchical inheritance.
 
 In Java, we can override methods only, not the variables(data members), so runtime polymorphism cannot be achieved by data members.
 
+The **java.lang.System.exit()** method exits current program by terminating running Java virtual machine. This method takes a status code. 
+             
+             exit(0) : Generally used to indicate successful termination.
+             exit(1) or exit(-1) or any other non-zero value – Generally indicates unsuccessful termination. 
 
 
 # CONSTRUCTORS:
@@ -226,6 +232,7 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 5.As per Java naming convention, Method names should be camelcase while Constructor names should start with capital letter.
 
+
 **JAVA ACCESS MODIFIERS:**
 
 |           | **PRIVATE**|**DEFAULT**|**PROTECTED**|**PUBLIC**|
@@ -236,7 +243,6 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 |**FROM ANY NON-SUB CLASS IN SAME PACKAGE**|NO|YES|YES|YES|
 |**FROM ANY SUB-CLASS FROM DIFFERENT PACKAGE**|NO|NO|YES|YES|
 |**FROM ANY NON-SUB CLASS FROM DIFFERENT PACKAGE**|NO|NO|NO|YES|
-
 
 
 # INHERITANCE:
