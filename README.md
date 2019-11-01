@@ -185,6 +185,10 @@ When a method in a subclass has the same name, same parameters declaration and s
 
 Private methods cannot be overridden as they are bonded during compile time. Therefore we can’t even override private methods in a subclass.
 
+It is possible to have different return type for a overriding method in child class, but child’s return type must be sub-type of parent class’ return type. This is known as covariant return type.
+
+**Code20:[MethodOverriding3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/MethodOverriding3.java):** A program to demonstrate that parent class overriden method can be called in overriding method of sub class using super keyword.
+
 ### DYNAMIC METHOD DISPATCH/RUN-TIME POLYMORPHISM:
 
 Method Overriding is one of the ways in which Java supports Run-time polymorphism.Dynamic Method Dispatch is a process in which a call to a overriden method is resolved during runtime rather than compile time.
@@ -195,7 +199,7 @@ Method Overriding is one of the ways in which Java supports Run-time polymorphis
 
 3.A superclass reference variable reffering to a subclass object is known as upcasting.
 
-**Code20:[DynamicMethodDispatch1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/DynamicMethodDispatch1.java):** A Java program to illustrate Dynamic Method Dispatch using hierarchical inheritance.
+**Code21:[DynamicMethodDispatch1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/DynamicMethodDispatch1.java):** A Java program to illustrate Dynamic Method Dispatch using hierarchical inheritance.
 
 In Java, we can override methods only, not the variables(data members), so runtime polymorphism cannot be achieved by data members.
 
