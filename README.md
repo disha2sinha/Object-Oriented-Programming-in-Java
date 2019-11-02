@@ -244,7 +244,7 @@ This process is used when we want to perform multiple tasks in a single construc
 **Points to be noted:**
 
     1.The this() expression should always be the first line of the constructor.
-    2.There should be at-least be one constructor without the this() keyword (constructor 3 in above example).
+    2.There should be at-least be one constructor without the this() keyword.
     3.Constructor chaining can be achieved in any order.
 
 ### PRIVATE CONSTRUCTORS AND SINGLETON CLASS:
@@ -294,7 +294,7 @@ Encapsulation is the mechanism that binds together code and the data it manipula
 
 **Code 2::[Encapsulation.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Encapsulation.java):** Java Program to illustrate encapsulation.
 
-Advantages of Encapsulation:
+#### Advantages of Encapsulation:
 
 1.**Data Hiding:** The user will have no idea about the inner implementation of the class. It will not be visible to the user that how the class is storing values in the variables. He only knows that we are passing the values to a setter method and variables are getting initialized with that value.
 
