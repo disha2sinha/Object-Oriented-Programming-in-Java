@@ -10,6 +10,7 @@ class Person {
 
     // Factory method to provide the users with instances
     static public Person getInstance() {
+        // to ensure only one instance is created
         if (name == null)
             name = new Person();
 
