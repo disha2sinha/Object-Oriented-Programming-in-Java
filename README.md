@@ -29,9 +29,7 @@ In this Code,there are 5 identifiers:
 
 There are **53** reserved words in Java of which **50** are **keywords** and **3** are **literals**(**true,false,null**)
 
-# OOP CONCEPTS:
-
-**CLASS:**
+# CLASS:
 
 A class is a user defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:
 
@@ -45,7 +43,7 @@ A class is a user defined blueprint or prototype from which objects are created.
     
     Body: The class body surrounded by braces, { }.
 
-**OBJECT:** 
+# OBJECT:
 
 An object is an instance of a class.Technically, Class is a template which describes what state and behavior of an instance this class can have. Object implements the state and behavior in the form of variables and methods and requires some memory allocated.An object consists of:
 
@@ -214,7 +212,8 @@ The **java.lang.System.exit()** method exits current program by terminating runn
 # CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
-**Folder:[Constructors](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Constructors)
+
+**Folder:[Constructors](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Constructors)**
 
 **Constructors cannot be Inherited:**
 
@@ -228,7 +227,40 @@ Java creates a default constructor automatically if no default or parameterized 
 
 **Copy Constructor:**
 Java supports copy constructor but doesn't create a default copy of constructor if user doesn't create one.
-**Code2:CopyConstructor.java:** 
+
+**Code2:[CopyConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Constructors/CopyConstructor.java):** A program to illustrate the use of copy constructor
+
+### CONSTRUCTOR CHAINING:
+
+Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+Constructor chaining can be done in two ways:
+
+    1.Within same class: It can be done using this() keyword for constructors in same class.See  [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java)
+    
+    2.From base class: by using super() keyword to call constructor from the base class.See [superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java)
+
+This process is used when we want to perform multiple tasks in a single constructor. Rather than creating a code for each task in a single constructor we create a separate constructor for each task and make their chain which makes the program more readable.
+
+**Points to be noted:**
+
+    1.The this() expression should always be the first line of the constructor.
+    2.There should be at-least be one constructor without the this() keyword (constructor 3 in above example).
+    3.Constructor chaining can be achieved in any order.
+
+### PRIVATE CONSTRUCTORS AND SINGLETON CLASS:
+
+We can provide access specifier to the constructor. If made private, then it can only be accessed inside the class.
+We can use private constructors for 1. Internal Constructor Chaining 2. Singleton class design
+
+A singleton class is a class that can have not more than a single object.
+After first time, if we try to instantiate the Singleton class, the new variable also points to the first instance created. So whatever modifications we do to a variable inside the class through any instance, it affects the variable of the single instance created and is visible if we access that variable through any instance of that class.
+
+**Code3:[PrivateConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Constructors/PrivateConstructor.java):** A program to illustrate singleton class using Private constructor.
+
+To design a singleton class:
+
+    1.Make constructor as private.
+    2.Write a static method that has return type object of this singleton class. Here, the concept of Lazy initialization in used to write this static method.
 
 ## CONSTRUCTORS VS METHODS:
 
@@ -247,6 +279,9 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 5.As per Java naming convention, Method names should be camelcase while Constructor names should start with capital letter.
 
 ### CONSTRUCTOR OVERLOADING:
+
+In java,it is possible to define two or more constructor of the same class that obviously share the same name but their parameter declaration are different either in terms of number of parameters or type of the parameters or both.This process is called Constructor Overloading.
+
 
 
 **JAVA ACCESS MODIFIERS:**
@@ -300,7 +335,7 @@ Multiple inheritance is not supported by Java using classes , handling the compl
 
 **Code1: [this1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this1.java):** this used to refer current class instance variables.
 
-**Code2: [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java):** used to invoke current class constructor.
+**Code2: [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java):** used to invoke current class constructor.This code is an example of **Constructor chaining using this()** discussed above.
 
 **Code3: [this3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this3.java):** used to invoke current class instances.
 
@@ -316,7 +351,7 @@ The super keyword in java is a reference variable that is used to refer parent c
 
 **FOLDER:[super KEYWORD](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Super%20keyword):**
 
-**Code1:[superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java):** 'super' keyword can also be used to access the parent class constructor.'super' can call both parametric as well as non parametric constructors depending upon the situation.
+**Code1:[superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java):** 'super' keyword can also be used to access the parent class constructor.'super' can call both parametric as well as non parametric constructors depending upon the situation.This code is also an example of **Constructor chaining with super()** discussed above.
 
 **Code2:[superWithMethods.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithMethods.java):** A program to illustrate that whenever a parent and child class have same named methods then to resolve ambiguity we use super keyword.
 
