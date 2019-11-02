@@ -7,7 +7,7 @@ class Test {
 
     // Default constructor
     Test() {
-        this(10, 20);
+        this(10, 20); //constructor chaining
         System.out.println("Inside  default constructor \n");
     }
 
