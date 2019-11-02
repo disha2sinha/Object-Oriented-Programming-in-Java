@@ -214,11 +214,25 @@ The **java.lang.System.exit()** method exits current program by terminating runn
 # CONSTRUCTORS:
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
+**Folder:[Constructors](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Constructors)
 
+**Constructors cannot be Inherited:**
 
-**CONSTRUCTORS VS METHODS:**
+When a class extends another class,the child class inherits the variables ,methods and the behaviour of the super class but not the constructors.Constructors have same name as the class name. So if constructors were inherited in child class then child class would contain a parent class constructor which is against the constraint that constructor should have same name as class name.
 
-Constructors in Java can be seen as Methods in a Class. But there is a big difference between Constructors and Methods.
+**Default Constructors:**
+
+Java creates a default constructor automatically if no default or parameterized constructor is created by user.The default constructor in java initializes the member data variables to default values
+
+**Code1:[DefaultContructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Constructors/DefaultConstructor.java):** A program to illustrate the behaviour of default constructors.
+
+**Copy Constructor:**
+Java supports copy constructor but doesn't create a default copy of constructor if user doesn't create one.
+**Code2:CopyConstructor.java:** 
+
+## CONSTRUCTORS VS METHODS:
+
+Constructors in Java can be seen as Methods in a Class. But there is a big difference be tween Constructors and Methods.
 
 1.Constructors have only one purpose, to create an Instance of a Class. This instantiation includes memory allocation and member initialization (Optional).
 
@@ -231,6 +245,8 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 4.The Constructor name must be the same as the Class name while Methods are not restricted.
 
 5.As per Java naming convention, Method names should be camelcase while Constructor names should start with capital letter.
+
+### CONSTRUCTOR OVERLOADING:
 
 
 **JAVA ACCESS MODIFIERS:**
