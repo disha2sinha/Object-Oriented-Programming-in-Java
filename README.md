@@ -235,9 +235,9 @@ Java supports copy constructor but doesn't create a default copy of constructor 
 Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
 Constructor chaining can be done in two ways:
 
-    1.Within same class: It can be done using this() keyword for constructors in same class.See  [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java)
+  1.**Within same class:** It can be done using this() keyword for constructors in same class.See  [this2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this2.java)
     
-    2.From base class: by using super() keyword to call constructor from the base class.See [superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java)
+  2.**From base class:** by using super() keyword to call constructor from the base class.See [superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java)
 
 This process is used when we want to perform multiple tasks in a single constructor. Rather than creating a code for each task in a single constructor we create a separate constructor for each task and make their chain which makes the program more readable.
 
@@ -282,7 +282,27 @@ By contrast, Methods cannot be used to create an Instance of a Class.
 
 In java,it is possible to define two or more constructor of the same class that obviously share the same name but their parameter declaration are different either in terms of number of parameters or type of the parameters or both.This process is called Constructor Overloading.
 
+**Code4:[ConstructorOverloading.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Constructors/ConstructorOverloading.java):** Java program to demostrate constructor overloading.
 
+# ENCAPSULATION:
+
+Encapsulation is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
+
+    1.Technically in encapsulation, the variables or data of a class is hidden from any other class and can be accessed only through any member function of own class in which they are declared.
+    2.As in encapsulation, the data in a class is hidden from other classes, so it is also known as data-hiding.
+    3.Encapsulation can be achieved by: Declaring all the variables in the class as private and writing public methods in the class to set and get the values of variables.
+
+**Code 2::[Encapsulation.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Encapsulation.java):** Java Program to illustrate encapsulation.
+
+Advantages of Encapsulation:
+
+1.**Data Hiding:** The user will have no idea about the inner implementation of the class. It will not be visible to the user that how the class is storing values in the variables. He only knows that we are passing the values to a setter method and variables are getting initialized with that value.
+
+2.**Increased Flexibility:** We can make the variables of the class as read-only or write-only depending on our requirement. If we wish to make the variables as read-only then we have to omit the setter methods like setName(), setAge() etc. from the above program or if we wish to make the variables as write-only then we have to omit the get methods like getName(), getAge() etc. from the above program.
+  
+3.**Reusability:** Encapsulation also improves the re-usability and the code becomes easy to change with new requirements.
+
+4.**Testing code:** Encapsulated code is easy to test for unit testing.
 
 **JAVA ACCESS MODIFIERS:**
 
