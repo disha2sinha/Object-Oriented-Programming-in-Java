@@ -409,9 +409,9 @@ Inheritence can be extended or inherited.
 ### Abstract class:
 A class with a pure virtual function ie, an abstract method is termed as Abstract class.In java, however the class has to be declared with abstract keyword to make it Abstract.
 
-**Code4:[AbstractClass1.java]():** A program to illustrate use of Abstract class.
+**Code4:[AbstractClass1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/AbstractClass1.java):** A program to illustrate use of Abstract class.
 
-**Code5:[AbstractClass2.java]():** A program to show that java allows abstract classes without any abstract method in it.
+**Code5:[Abstractclass2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Abstractclass2.java):** A program to show that java allows abstract classes without any abstract method in it.
 
 
 **JAVA ACCESS MODIFIERS:**
