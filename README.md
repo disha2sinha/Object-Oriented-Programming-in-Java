@@ -284,6 +284,8 @@ In java,it is possible to define two or more constructor of the same class that 
 
 **Code4:[ConstructorOverloading.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Constructors/ConstructorOverloading.java):** Java program to demostrate constructor overloading.
 
+See more on contructors: [Rules And Properties of Constructor](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/RulesAndPropertiesOfConstructor.txt)
+
 # ENCAPSULATION:
 
 Encapsulation is the mechanism that binds together code and the data it manipulates.Other way to think about encapsulation is, it is a protective shield that prevents the data from being accessed by the code outside this shield.
@@ -303,6 +305,72 @@ Encapsulation is the mechanism that binds together code and the data it manipula
 3.**Reusability:** Encapsulation also improves the re-usability and the code becomes easy to change with new requirements.
 
 4.**Testing code:** Encapsulated code is easy to test for unit testing.
+
+# PACKAGES:
+
+A package is a container within which we can store multiple classes,subpackages and interfaces.A package is a container of a group of related classes where some of the classes are accessible are exposed and others are kept for internal purpose.
+
+Packages are used for:
+
+    1.Avoiding namespace collision ie Preventing naming conflicts.Thus there can be two classes of same name in two different packages.
+    2.Searching and using classes, interfaces, enumerations and annotations becomes easier
+    3.Providing controlled access: protected and default have package level access control. A protected member is accessible by classes in the same package and its subclasses. A default member (without any access specifier) is accessible by classes in the same package only.
+    4.Packages can be considered as data encapsulation (or data-hiding).
+
+**How packages work?**
+
+If a package name is college.dept.cse, then there are three directories, college, dept and cse such that cse is present in dept and dept is present college. Also, the directory college is accessible through **CLASSPATH** variable, i.e., path of parent directory of college is present in CLASSPATH. The idea is to make sure that classes are easy to locate.We can add more classes to a created package by using package name at the top of the program and saving it in the package directory. We need a new java file to define a public class, otherwise we can add the new class to an existing .java file and recompile it.
+
+                // import the Vector class from util package.
+               import java.util.vector; 
+
+                // import all the classes from util package
+               import java.util.*; 
+                // All the classes and interfaces of this package
+                // will be accessible but not subpackages.
+                import package.*;
+
+                // Only mentioned class of this package will be accessible.
+                import package.classname;
+
+                // Class name is generally used when two packages have the same
+                // class name. For example in below code both packages have
+                // date class so using a fully qualified name to avoid conflict
+                import java.util.Date;
+                import my.packag.Date;
+
+Packages can be of two types:
+
+**Built-in Packages:**
+
+These packages consist of a large number of classes which are a part of Java API.Some of the commonly used built-in packages are:
+1) java.lang: Contains language support classes(e.g classed which defines primitive data types, math operations). This package is automatically imported.
+
+2)  java.io: Contains classed for supporting input / output operations.
+
+3)  java.util: Contains utility classes which implement data structures like Linked List, Dictionary and support ; for Date / Time operations.
+
+4)  java.applet: Contains classes for creating Applets.
+
+5)  java.awt: Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
+
+6)  java.net: Contain classes for supporting networking operations.
+
+**Points to be noted:**
+
+    1.Every class is part of some package.
+    2.If no package is specified, the classes in the file goes into a special unnamed package (the same unnamed package for all files).
+    3.All classes/interfaces in a file are part of the same package. Multiple files can specify the same package name.
+    4.If package name is specified, the file must be in a subdirectory called name (i.e., the directory name must match the package name).
+    5.We can access public classes in another (named) package using: package-name.class-name
+
+**User-defined packages:**
+
+These are the packages that are defined by the user. First we create a directory with the desired package name (name should be same as the name of the package). Then we create the desired class inside the directory with the first statement being the package names.
+
+Static import is a feature introduced in Java programming language ( versions 5 and above ) that allows members ( fields and methods ) defined in a class as public static to be used in Java code without specifying the class in which the field is defined.
+
+**Code3::[StatisImport.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/StaticImport.java):** A program to illustrate how Static import works.
 
 **JAVA ACCESS MODIFIERS:**
 
