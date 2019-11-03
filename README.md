@@ -1,6 +1,6 @@
 # Object-Oriented-Programming-in-Java
 
-Resources: [Geeksforgeeks](https://www.geeksforgeeks.org/java/) , [javabeginnerstutorial](https://javabeginnerstutorial.com/core-java-tutorial/)
+References: [Geeksforgeeks](https://www.geeksforgeeks.org/java/) , [javabeginnerstutorial](https://javabeginnerstutorial.com/core-java-tutorial/)
 
 
 **JAVA IS A PLATFORM-INDEPENDENT LANGUAGE**
@@ -58,7 +58,7 @@ An object is an instance of a class.Technically, Class is a template which descr
 
 When an object of a class is created, the class is said to be **instantiated**. All the instances share the attributes and the behavior of the class. But the values of those attributes, i.e. the state are unique for each object. A single class may have any number of instances.
 
-**FOLDER:[Class and objects](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Classes%20and%20objects):**
+**PACKAGE:[Class and objects](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Classes%20and%20objects):**
 
 **Code1:[CreatingObjects1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Classes%20and%20objects/Creatingobjects1.java):** Shows the creation of object using 'new' keyword.The new operator instantiates a class by allocating memory for a new object and returning a reference to that memory.
 
@@ -106,7 +106,7 @@ Methods calls are implemented through stack. Whenever a method is called a stack
 
 **Java is strictly pass by value**:
 
-**FOLDER:[Methods](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Methods):**
+**PACKAGE:[Methods](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Methods):**
 
 **Code1:[PassByValue1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Methods/PassByValue1.java):** We pass an int to the function “change()” and as a result the change in the value of that integer is not reflected in the main method.Java creates a copy of the variable being passed in the method and then do the manipulations. Hence the change is not reflected in the main method.
 
@@ -213,7 +213,7 @@ The **java.lang.System.exit()** method exits current program by terminating runn
 
 Constructors are used for initializing new objects. Constructors does not return any values but implicitly it returns the object of the class. Fields are variables that provides the state of the class and its objects, and methods are used to implement the behavior of the class and its objects.
 
-**Folder:[Constructors](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Constructors)**
+**PACKAGE:[Constructors](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Constructors)**
 
 **Constructors cannot be Inherited:**
 
@@ -344,17 +344,17 @@ Packages can be of two types:
 **Built-in Packages:**
 
 These packages consist of a large number of classes which are a part of Java API.Some of the commonly used built-in packages are:
-1) java.lang: Contains language support classes(e.g classed which defines primitive data types, math operations). This package is automatically imported.
+1) **java.lang:** Contains language support classes(e.g classed which defines primitive data types, math operations). This package is automatically imported.
 
-2)  java.io: Contains classed for supporting input / output operations.
+2)  **java.io:** Contains classed for supporting input / output operations.
 
-3)  java.util: Contains utility classes which implement data structures like Linked List, Dictionary and support ; for Date / Time operations.
+3)  **java.util:** Contains utility classes which implement data structures like Linked List, Dictionary and support ; for Date / Time operations.
 
-4)  java.applet: Contains classes for creating Applets.
+4)  **java.applet:** Contains classes for creating Applets.
 
-5)  java.awt: Contain classes for implementing the components for graphical user interfaces (like button , ;menus etc).
+5)  **java.awt:** Contain classes for implementing the components for graphical user interfaces (like button , menus etc).
 
-6)  java.net: Contain classes for supporting networking operations.
+6)  **java.net:** Contain classes for supporting networking operations.
 
 **Points to be noted:**
 
@@ -370,7 +370,49 @@ These are the packages that are defined by the user. First we create a directory
 
 Static import is a feature introduced in Java programming language ( versions 5 and above ) that allows members ( fields and methods ) defined in a class as public static to be used in Java code without specifying the class in which the field is defined.
 
-**Code3::[StatisImport.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/StaticImport.java):** A program to illustrate how Static import works.
+**Code3::[StaticImport.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/StaticImport.java):** A program to illustrate how Static import works.
+
+# INTERFACES:
+
+Interface looks like a class and has variables and methods declaration like that of a class but it doesnot contain any method definition.
+
+
+    1.Interfaces specify what a class must do and not how. It is the blueprint of the class.
+    2.An Interface is about capabilities like a Player may be an interface and any class implementing Player must be able to (or must implement) move(). So it specifies a set of methods that the class has to implement.
+    3.If a class implements an interface and does not provide method bodies for all functions specified in the interface, then class must be declared abstract.
+    4.A Java library example is, Comparator Interface. If a class implements this interface, then it can be used to sort a collection.
+
+**Use of Interface:**
+
+  1.It is used to achieve total abstraction.
+  
+  2.Since java does not support multiple inheritance in case of class, but by using interface it can achieve multiple inheritance .
+  
+  3.It is also used to achieve loose coupling.
+  
+  4.It provides boundness to the program.
+  
+  5.Abstract classes may contain non-final variables, whereas variables in interface are final, public and static.
+  
+ **PACKAGE:[Interface](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Interface):**
+ 
+ **Code1:[Interface1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Interface1.java):** A simple java program to illustrate use of Interface.
+
+**Code2:[Interface2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Interface2.java):** A simple program to show that we can now define static methods in interfaces(JDK 8 onwards) which can be called independently without an object.These methods are not inherited. 
+
+Read more on Interface **[here](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/MoreAboutInterface.txt)**
+
+Inheritence can be extended or inherited.
+
+**Code3:[Interface3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Interface3.java):** A Java program to show Interface can be extended.
+
+### Abstract class:
+A class with a pure virtual function ie, an abstract method is termed as Abstract class.In java, however the class has to be declared with abstract keyword to make it Abstract.
+
+**Code4:[AbstractClass1.java]():** A program to illustrate use of Abstract class.
+
+**Code5:[AbstractClass2.java]():** A program to show that java allows abstract classes without any abstract method in it.
+
 
 **JAVA ACCESS MODIFIERS:**
 
@@ -405,7 +447,7 @@ Inheritance is an important pillar of OOP(Object Oriented Programming). It is th
 **4.Multiple Inheritence:** In Multiple inheritance ,one class can have more than one superclass and inherit features from all parent classes.Java does not support multiple inheritance with classes. In java, we can achieve multiple inheritance only through Interfaces.
 Multiple inheritance is not supported by Java using classes , handling the complexity that causes due to multiple inheritance is very complex. It creates problem during various operations like casting, constructor chaining etc 
 
-**FOLDER:[Inheritence](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Inheritence):** 
+**PACKAGE:[Inheritence](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Inheritence):** 
 
 **Code1: [ObjectCreation.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Inheritence/ObjectCreation.java):** Code shows that super class and sub class constructors refer to the same objects.
 
@@ -419,7 +461,7 @@ Multiple inheritance is not supported by Java using classes , handling the compl
 
 'this' works as a reference to the current object, whose method or constructor is being invoked. This keyword can be used to refer to any member of the current object from within an instance method or a constructor.
 
-**FOLDER: [this keyword](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/this%20keyword)**:
+**PACKAGE: [this keyword](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/this%20keyword)**:
 
 **Code1: [this1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/this%20keyword/this1.java):** this used to refer current class instance variables.
 
@@ -437,7 +479,7 @@ Multiple inheritance is not supported by Java using classes , handling the compl
 
 The super keyword in java is a reference variable that is used to refer parent class objects.
 
-**FOLDER:[super KEYWORD](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Super%20keyword):**
+**PACKAGE:[super KEYWORD](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Super%20keyword):**
 
 **Code1:[superWithConstructor.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithConstructor.java):** 'super' keyword can also be used to access the parent class constructor.'super' can call both parametric as well as non parametric constructors depending upon the situation.This code is also an example of **Constructor chaining with super()** discussed above.
 
