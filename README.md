@@ -406,13 +406,49 @@ Inheritence can be extended or inherited.
 
 **Code3:[Interface3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Interface3.java):** A Java program to show Interface can be extended.
 
-### Abstract class:
+# Abstract class:
 A class with a pure virtual function ie, an abstract method is termed as Abstract class.In java, however the class has to be declared with abstract keyword to make it Abstract.
 
 **Code4:[AbstractClass1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/AbstractClass1.java):** A program to illustrate use of Abstract class.
 
 **Code5:[Abstractclass2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/Abstractclass2.java):** A program to show that java allows abstract classes without any abstract method in it.
+### ABSTRACT CLASS VS INTERFACE:
 
+|**PROPERTIES**|**ABSTRACT CLASS**|**INTERFACE**|
+|:------------:|:----------------:|:-----------:|
+|**Methods**|Abstract class can have abstract and non-abstract methods. From Java 8, it can have default and static methods also.|Interface can have only abstract methods.|
+|**Variables**|An abstract class can have final,non-final,static,non-static variables.|Variables declared in a Java interface are by default final.Interface can have only static and final variables.|
+|**Implementation**|Abstract class can provide the implementation of interface.|Interface can’t provide the implementation of abstract class.|
+|**Inheritance vs Abstraction**|Abstract class can be extended using keyword “extends”.|A Java interface can be implemented using keyword “implements” |
+|**Multiple implementation**|An abstract class can extend another Java class and implement multiple Java interfaces.|An interface can extend another Java interface only.|
+|**Accessibility of Data Members**|A Java abstract class can have class members with access as private, protected, etc.|Members of a Java interface are public by default|
+
+### NESTED INTERFACE:
+
+Interfaces declared as member of a class or another interface are called member interface or nested interface.
+
+**Code6:[NestedInterface1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/NestedInterface1.java):** Java program to demonstrate working of interface inside a class. 
+
+**Code7:[NestedInterface2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/NestedInterface2.java):** // Java program to demonstrate protected specifier for nested interface. 
+
+**Code8:[NestedInterface3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/NestedInterface3.java):** Java program to demonstrate working of interface inside another interface. 
+
+**Code9:[NestedInterface4.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Interface/NestedInterface4.java):** Java program to demonstrate an interface cannot have non-public member interface. 
+
+# NESTED CLASSES:
+
+When a class is defined within another class, such classes are known as nested classes.
+
+
+    1.The scope of a nested class is bounded by the scope of its enclosing class. Thus in above example, class NestedClass does not exist independently of class OuterClass.
+    2.A nested class has access to the members, including private members, of the class in which it is nested. However, reverse is not true i.e. the enclosing class does not have access to the members of the nested class.
+    3.A nested class is also a member of its enclosing class.
+    4.As a member of its enclosing class, a nested class can be declared private, public, protected, or package private(default).
+    
+Nested classes are divided into two categories:
+
+        1.static nested class : Nested classes that are declared static are called static nested classes.
+        2.inner class : An inner class is a non-static nested class.
 
 **JAVA ACCESS MODIFIERS:**
 
