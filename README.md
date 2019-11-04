@@ -447,8 +447,26 @@ When a class is defined within another class, such classes are known as nested c
     
 Nested classes are divided into two categories:
 
-        1.static nested class : Nested classes that are declared static are called static nested classes.
-        2.inner class : An inner class is a non-static nested class.
+        1.static nested class : Nested classes that are declared static are called static nested classes.A static nested class cannot refer directly to instance variables or methods defined in its enclosing class.It can use them only through an object reference.They are accessed using the enclosing class name.
+        2.inner class : An inner class is a non-static nested class.Inner class has access to all members(static and non-static variables and methods, including private) of its outer class and may refer to them directly in the same way that other non-static members of the outer class do.
+Inner class are of two categories:
+
+        1.Local Inner class: When an inner class is defined inside a block generally the method of the Outer Class or sometimes a for loop or if clause then it becomes local inner class.Local inner classes cannot have any access modifiers associated with them. However, they can be marked as final or abstract. These class have access to the fields of the class enclosing it. Local inner class must be instantiated in the block they are defined in.
+
+        2.Anonymous Inner class:It is an inner class without a name and for which only a single object is created.
+        
+**PACKAGE:[NestedClass](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/NestedClass):**
+
+**Code1:[NestedClass1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/NestedClass/NestedClass1.java):** A Java Program to illustrate static nested class.
+
+**Code2:[NestedClass2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/NestedClass/NestedClass2.java):** A Java Program to illustrate non-static nested class(inner class).
+
+**Code3:[NestedClass3.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/NestedClass/NestedClass3.java):** A Java Program to illustrate local inner class inside a method.
+
+**Code4:[NestedClass4.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/NestedClass/NestedClass4.java):** A Java Program to illustrate local inner class inside an if clause.
+
+**Code5:[NestedClass5.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/NestedClass/NestedClass5.java):** A Java Program to illustrate anonymous inner class.
+
 
 **JAVA ACCESS MODIFIERS:**
 
