@@ -542,10 +542,40 @@ The super keyword in java is a reference variable that is used to refer parent c
 **Code3:[superWithVariables.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithVariables.java):** A Program to illustrate how use of 'super' with data member of parent class can avoid ambiguity if derived class and parent class has same data members.
 
 
+# MULTITHREADING:
+
+Most programming languages do not enable programmers to specify concurrent activities.Java makes concurrency available to the programmers through APIs.The programmer specifies that applications contain thread of execution,where each thread designates a portion of a program that may execute concurrently with other threads.This capability of java is called multithreading.
+
+**Example**:When programs download large files such as an audio file over the internet,users may not want to wait until entire lengthy file downloads before starting the playback.To solve this,we can put multiple threads to work-one thread downloads the clip and another plays it.
+
+Java's garbage collection is also an example of multithreading. 
+
+### Thread States :Life Cycle Of A Thread:
+
+![](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/snapshots/Thread_life_cycle.jpg)
 
 
+A ***new*** thread begins its life cycle in the ***new*** state.It remains in this state until the program starts the thread,which places the thread in the ***runnable*** state.A thread in this state is considered to be executing its task.
 
+Sometimes a thread transitions to the **waiting** state while the thread waits for another thread to perform a task.Once in this state,a thread transitions back to the ***runnable*** state only when another thread signals the ***waiting*** thread to continue executing. 
 
+A ***runnable*** thread can enter the **timed waiting** state for a specified interval of time.A thread in this state transitions back to the ***runnable*** state when it is signalled by another thread or that time interval expires or when the event it is waiting for occurs-whichever comes first.***Timed waiting*** threads cannot  use a processor,even if one is available.A thread can transition to the ***timed waiting*** state if it provides an optional wait interval when it is waiting for another thread to perform a task.Another way a thread can end up in ***timed waiting*** state is when a thread is put to sleep.A sleeping thread remains in ***timed waiting*** state for a designated period of time(called a sleep interval) at which point it returns to the runnable state.
 
+A runnable thread enters ***terminated*** state when it completes its task or otherwise terminates due to some error condition. In the UML state diagram above, the ***terminated*** state is followed by the UML final state to indicate end of the state transitions.
 
+Threads can be created by using two mechanisms :
+1. **Extending the Thread class**:
 
+2. **Implementing the Runnable Interface**:
+
+### THREAD PRIORITIES:
+
+Every Java thread has a priority that helps the operating system determine the order in which threads are scheduled.Informally,threads with higher priority are more important to a program and should be allocated processor time before lower-priority threads.
+
+        public static int MIN_PRIORITY: This is minimum priority that a thread can have. Value for this is 1.
+        public static int NORM_PRIORITY: This is default priority of a thread if do not explicitly define it. Value for this is 5.
+        public static int MAX_PRIORITY: This is maximum priority of a thread. Value for this is 10.
+
+**public final int getPriority()**: java.lang.Thread.getPriority() method returns priority of given thread.
+
+**public final void setPriority(int newPriority)**: java.lang.Thread.setPriority() method changes the priority of thread to the value newPriority. This method throws IllegalArgumentException if value of parameter newPriority goes beyond minimum(1) and maximum(10) limit.
