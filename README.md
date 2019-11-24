@@ -562,11 +562,18 @@ Sometimes a thread transitions to the **waiting** state while the thread waits f
 A ***runnable*** thread can enter the **timed waiting** state for a specified interval of time.A thread in this state transitions back to the ***runnable*** state when it is signalled by another thread or that time interval expires or when the event it is waiting for occurs-whichever comes first.***Timed waiting*** threads cannot  use a processor,even if one is available.A thread can transition to the ***timed waiting*** state if it provides an optional wait interval when it is waiting for another thread to perform a task.Another way a thread can end up in ***timed waiting*** state is when a thread is put to sleep.A sleeping thread remains in ***timed waiting*** state for a designated period of time(called a sleep interval) at which point it returns to the runnable state.
 
 A runnable thread enters ***terminated*** state when it completes its task or otherwise terminates due to some error condition. In the UML state diagram above, the ***terminated*** state is followed by the UML final state to indicate end of the state transitions.
+See **[code1](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading4.java)** and **[code2](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading5.java)**
 
 Threads can be created by using two mechanisms :
-1. **Extending the Thread class**:
+1. **Extending the Thread class**:We create a class that extends the java.lang.Thread class. This class overrides the run() method available in the Thread class. A thread begins its life inside run() method. We create an object of our new class and call start() method to start the execution of a thread. Start() invokes the run() method on the Thread object.See **[code](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading2.java)**
 
-2. **Implementing the Runnable Interface**:
+2. **Implementing the Runnable Interface**:We create a new class which implements java.lang.Runnable interface and override run() method. Then we instantiate a Thread object and call start() method on this object.See **[code](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading3.java)**
+
+### Thread Class vs Runnable Interface
+
+1. If we extend the Thread class, our class cannot extend any other class because Java doesn’t support multiple inheritance. But, if we implement the Runnable interface, our class can still extend other base classes.
+
+2. We can achieve basic functionality of a thread by extending Thread class because it provides some inbuilt methods like yield(), interrupt() etc. that are not available in Runnable interface.
 
 ### THREAD PRIORITIES:
 
@@ -579,3 +586,9 @@ Every Java thread has a priority that helps the operating system determine the o
 **public final int getPriority()**: java.lang.Thread.getPriority() method returns priority of given thread.
 
 **public final void setPriority(int newPriority)**: java.lang.Thread.setPriority() method changes the priority of thread to the value newPriority. This method throws IllegalArgumentException if value of parameter newPriority goes beyond minimum(1) and maximum(10) limit.
+
+**isAlive():** Returns true or false based on whether Thread is alive or not. See **[Code](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/MultiThreading6.java)**
+
+
+
+
