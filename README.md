@@ -541,6 +541,21 @@ The super keyword in java is a reference variable that is used to refer parent c
 
 **Code3:[superWithVariables.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Super%20keyword/superWithVariables.java):** A Program to illustrate how use of 'super' with data member of parent class can avoid ambiguity if derived class and parent class has same data members.
 
+# EXCEPTION HANDLING:
+
+An exception is an unwanted or unexcepted event,which occurs during the execution of a program ie. at run-time that disrupts the normal-flow of the program's execution.
+
+### JAVA EXCEPTION HIERARCHY:
+
+![](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/snapshots/Exception_Hierarchy.jpg)
+
+**PACKAGE:[EXCEPTION HANDLING](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/tree/master/Exception%20Handling)**
+
+**Code1:[ExceptionHandling1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Exception%20Handling/ExceptionHandling1.java):** A java program to show three ways of printing exception msg using printStackTrace(),toString(),getMessage() methods of Throwable class.
+
+**Code2:[ControlFlow1.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Exception%20Handling/ControlFlow1.java):** If a statement in try block raised an exception, then the rest of the try block doesn’t execute and control passes to the corresponding catch block. After executing the catch block, the control will be transferred to finally block(if present) and then the rest program will be executed.
+
+**Code3:[ControlFlow2.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Exception%20Handling/ControlFlow2.java):** Java program to demonstrate control flow of try-catch-finally clause when exception occur in try block and handled in catch block.
 
 # MULTITHREADING:
 
