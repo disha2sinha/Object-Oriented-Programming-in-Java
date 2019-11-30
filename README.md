@@ -554,14 +554,41 @@ Java's garbage collection is also an example of multithreading.
 
 ![](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/snapshots/Thread_life_cycle.jpg)
 
+A thread lifecycle is divided into five different states, which a thread may go through in its lifetime. Each thread can be in one of the following five states. Let's understand each of these different states in the order in which they are mentioned below -:
 
-A ***new*** thread begins its life cycle in the ***new*** state.It remains in this state until the program starts the thread,which places the thread in the ***runnable*** state.A thread in this state is considered to be executing its task.
 
-Sometimes a thread transitions to the **waiting** state while the thread waits for another thread to perform a task.Once in this state,a thread transitions back to the ***runnable*** state only when another thread signals the ***waiting*** thread to continue executing. 
+    1.New State.
+    2.Runnable State.
+    3.Running State.
+    4.Waiting or Blocked or Sleeping State.
+    5.Dead State.
 
-A ***runnable*** thread can enter the **timed waiting** state for a specified interval of time.A thread in this state transitions back to the ***runnable*** state when it is signalled by another thread or that time interval expires or when the event it is waiting for occurs-whichever comes first.***Timed waiting*** threads cannot  use a processor,even if one is available.A thread can transition to the ***timed waiting*** state if it provides an optional wait interval when it is waiting for another thread to perform a task.Another way a thread can end up in ***timed waiting*** state is when a thread is put to sleep.A sleeping thread remains in ***timed waiting*** state for a designated period of time(called a sleep interval) at which point it returns to the runnable state.
+### New State:
 
-A runnable thread enters ***terminated*** state when it completes its task or otherwise terminates due to some error condition. In the UML state diagram above, the ***terminated*** state is followed by the UML final state to indicate end of the state transitions.
+A thread enters a new state when an object of Thread class is created but the start() method hasn't been called on it yet. In new state, a thread is not considered alive as it's not a thread of execution. Once the start() method is called on the thread, it leaves the new state and enters the next state but once it leaves new state, it's impossible for it to return back to new state in its lifetime.
+
+### Runnable State:
+
+A thread enters a runnable state when the **start()** method has been called on it. It means, that a thread is eligible to run, but it's not yet running, as the thread scheduler hasn't selected it to run. At one point of time, there could be multiple thread in a runnable state, it's always the choice of thread scheduler to decide on which thread to move to the next state from runnable state. A thread in runnable state is considered to be alive. A thread can return to a runnable state after coming back from a sleeping, waiting/blocked or running state.
+
+### Running State:
+
+A thread enters a running state when the thread schedular has selected it to run(out of all the threads in a thread pool). In this state, a thread starts executing the run() method and it is alive and kicking. From the running state, a thread can enter into waiting/blocked state, runnable or the final dead state.
+
+### Waiting or Blocked or Sleeping State:
+
+A thread enters a waiting state in three situations:
+
+    When a thread has called wait() method on itself and it is waiting for the other thread to notify it or wake it up.
+    When a thread code has called sleep() method on a thread, asking it to sleep for a duration.
+    When a thread is waiting for an Input/Output resource to be free.
+
+When a thread finds itself in any of the above mentioned three states, such events pushes the thread into a blocking/waiting or sleeping mode and the thread is no longer eligible to run. In any of these states, the thread is still considered to be alive. When thread gets out of waiting, blocking or sleeping state, it re-enters into runnable state.
+
+### Dead State:
+
+This is the last state in a thread's lifetime. A thread enters the dead state after it has successfully completed executing the run() method. At this situation, it is considered to be not alive and hence if you try to call start() method on a dead thread, it raises IllegalThreadStateException.
+
 See **[code1](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading4.java)** and **[code2](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Multithreading/Multithreading5.java)**
 
 Threads can be created by using two mechanisms :
