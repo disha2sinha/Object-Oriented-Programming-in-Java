@@ -306,6 +306,24 @@ Encapsulation is the mechanism that binds together code and the data it manipula
 
 4.**Testing code:** Encapsulated code is easy to test for unit testing.
 
+# ABSTRACTION:
+
+Data Abstraction is defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details.The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.
+
+Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of car or applying brakes will stop the car but he does not know about how on pressing the accelerator the speed is actually increasing, he does not know about the inner mechanism of the car or the implementation of accelerator, brakes etc in the car. This is what abstraction is. 
+In java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+
+    An abstract class is a class that is declared with abstract keyword.
+    An abstract method is a method that is declared without an implementation.
+    An abstract class may or may not have all abstract methods. Some of them can be concrete methods
+    A method defined abstract must always be redefined in the subclass,thus making overriding compulsory OR either make subclass itself abstract.
+    Any class that contains one or more abstract methods must also be declared with abstract keyword.
+    There can be no object of an abstract class.That is, an abstract class can not be directly instantiated with the new operator.
+    An abstract class can have parametrized constructors and default constructor is always present in an abstract class.
+
+Code:**[Abstraction.java](https://github.com/disha2sinha/Object-Oriented-Programming-in-Java/blob/master/Abstraction.java)** :Abstraction implemented using Abstract class and abstract methods.
+
 # PACKAGES:
 
 A package is a container within which we can store multiple classes,subpackages and interfaces.A package is a container of a group of related classes where some of the classes are accessible are exposed and others are kept for internal purpose.
